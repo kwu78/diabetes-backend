@@ -1,1 +1,359 @@
-[{"FIPS":"01","STATE_NAME":"Alabama","Diabetes_Actual":13.0,"Diabetes_Predicted":12.6226617259,"Warning":0},{"FIPS":"02","STATE_NAME":"Alaska","Diabetes_Actual":8.0,"Diabetes_Predicted":8.2903079098,"Warning":1},{"FIPS":"04","STATE_NAME":"Arizona","Diabetes_Actual":10.0,"Diabetes_Predicted":9.0356125659,"Warning":0},{"FIPS":"05","STATE_NAME":"Arkansas","Diabetes_Actual":11.0,"Diabetes_Predicted":12.0257588309,"Warning":2},{"FIPS":"06","STATE_NAME":"California","Diabetes_Actual":11.0,"Diabetes_Predicted":8.544323833,"Warning":0},{"FIPS":"08","STATE_NAME":"Colorado","Diabetes_Actual":7.0,"Diabetes_Predicted":6.8799250372,"Warning":0},{"FIPS":"09","STATE_NAME":"Connecticut","Diabetes_Actual":9.0,"Diabetes_Predicted":9.0529356118,"Warning":1},{"FIPS":"10","STATE_NAME":"Delaware","Diabetes_Actual":10.0,"Diabetes_Predicted":10.4072905234,"Warning":1},{"FIPS":"11","STATE_NAME":"District of Columbia","Diabetes_Actual":8.0,"Diabetes_Predicted":6.2255435513,"Warning":0},{"FIPS":"12","STATE_NAME":"Florida","Diabetes_Actual":10.0,"Diabetes_Predicted":9.450820311,"Warning":0},{"FIPS":"13","STATE_NAME":"Georgia","Diabetes_Actual":11.0,"Diabetes_Predicted":9.5896128431,"Warning":0},{"FIPS":"15","STATE_NAME":"Hawaii","Diabetes_Actual":8.0,"Diabetes_Predicted":7.3624451399,"Warning":0},{"FIPS":"16","STATE_NAME":"Idaho","Diabetes_Actual":9.0,"Diabetes_Predicted":8.7774617079,"Warning":0},{"FIPS":"17","STATE_NAME":"Illinois","Diabetes_Actual":10.0,"Diabetes_Predicted":10.1841494109,"Warning":1},{"FIPS":"18","STATE_NAME":"Indiana","Diabetes_Actual":11.0,"Diabetes_Predicted":10.3027711141,"Warning":0},{"FIPS":"19","STATE_NAME":"Iowa","Diabetes_Actual":9.0,"Diabetes_Predicted":9.2777257784,"Warning":1},{"FIPS":"20","STATE_NAME":"Kansas","Diabetes_Actual":10.0,"Diabetes_Predicted":9.5983380311,"Warning":0},{"FIPS":"21","STATE_NAME":"Kentucky","Diabetes_Actual":12.0,"Diabetes_Predicted":12.2582105635,"Warning":1},{"FIPS":"22","STATE_NAME":"Louisiana","Diabetes_Actual":12.0,"Diabetes_Predicted":10.9971607266,"Warning":0},{"FIPS":"23","STATE_NAME":"Maine","Diabetes_Actual":8.0,"Diabetes_Predicted":9.524812986,"Warning":2},{"FIPS":"24","STATE_NAME":"Maryland","Diabetes_Actual":10.0,"Diabetes_Predicted":9.5105595015,"Warning":0},{"FIPS":"25","STATE_NAME":"Massachusetts","Diabetes_Actual":8.0,"Diabetes_Predicted":8.345828784,"Warning":1},{"FIPS":"26","STATE_NAME":"Michigan","Diabetes_Actual":9.0,"Diabetes_Predicted":9.1999301852,"Warning":1},{"FIPS":"27","STATE_NAME":"Minnesota","Diabetes_Actual":8.0,"Diabetes_Predicted":8.0993704505,"Warning":1},{"FIPS":"28","STATE_NAME":"Mississippi","Diabetes_Actual":14.0,"Diabetes_Predicted":11.6823575212,"Warning":0},{"FIPS":"29","STATE_NAME":"Missouri","Diabetes_Actual":10.0,"Diabetes_Predicted":10.0562555126,"Warning":1},{"FIPS":"30","STATE_NAME":"Montana","Diabetes_Actual":8.0,"Diabetes_Predicted":7.8805850191,"Warning":0},{"FIPS":"31","STATE_NAME":"Nebraska","Diabetes_Actual":9.0,"Diabetes_Predicted":9.3836908003,"Warning":1},{"FIPS":"32","STATE_NAME":"Nevada","Diabetes_Actual":10.0,"Diabetes_Predicted":9.8963975505,"Warning":0},{"FIPS":"33","STATE_NAME":"New Hampshire","Diabetes_Actual":7.0,"Diabetes_Predicted":8.2922816864,"Warning":2},{"FIPS":"34","STATE_NAME":"New Jersey","Diabetes_Actual":9.0,"Diabetes_Predicted":9.0607867933,"Warning":1},{"FIPS":"35","STATE_NAME":"New Mexico","Diabetes_Actual":12.0,"Diabetes_Predicted":9.6926677966,"Warning":0},{"FIPS":"36","STATE_NAME":"New York","Diabetes_Actual":10.0,"Diabetes_Predicted":9.3728772995,"Warning":0},{"FIPS":"37","STATE_NAME":"North Carolina","Diabetes_Actual":11.0,"Diabetes_Predicted":9.4224424235,"Warning":0},{"FIPS":"38","STATE_NAME":"North Dakota","Diabetes_Actual":9.0,"Diabetes_Predicted":9.3178378812,"Warning":1},{"FIPS":"39","STATE_NAME":"Ohio","Diabetes_Actual":11.0,"Diabetes_Predicted":10.1063071097,"Warning":0},{"FIPS":"40","STATE_NAME":"Oklahoma","Diabetes_Actual":12.0,"Diabetes_Predicted":11.6896649615,"Warning":0},{"FIPS":"41","STATE_NAME":"Oregon","Diabetes_Actual":8.0,"Diabetes_Predicted":8.5319991684,"Warning":1},{"FIPS":"42","STATE_NAME":"Pennsylvania","Diabetes_Actual":9.0,"Diabetes_Predicted":9.2555083275,"Warning":1},{"FIPS":"44","STATE_NAME":"Rhode Island","Diabetes_Actual":9.0,"Diabetes_Predicted":9.0774204309,"Warning":1},{"FIPS":"45","STATE_NAME":"South Carolina","Diabetes_Actual":12.0,"Diabetes_Predicted":10.1250185001,"Warning":0},{"FIPS":"46","STATE_NAME":"South Dakota","Diabetes_Actual":10.0,"Diabetes_Predicted":8.9613368593,"Warning":0},{"FIPS":"47","STATE_NAME":"Tennessee","Diabetes_Actual":12.0,"Diabetes_Predicted":10.8373600327,"Warning":0},{"FIPS":"48","STATE_NAME":"Texas","Diabetes_Actual":11.0,"Diabetes_Predicted":10.1812393425,"Warning":0},{"FIPS":"49","STATE_NAME":"Utah","Diabetes_Actual":8.0,"Diabetes_Predicted":9.35976201,"Warning":2},{"FIPS":"50","STATE_NAME":"Vermont","Diabetes_Actual":7.0,"Diabetes_Predicted":6.9452497923,"Warning":0},{"FIPS":"51","STATE_NAME":"Virginia","Diabetes_Actual":10.0,"Diabetes_Predicted":8.9088895317,"Warning":0},{"FIPS":"53","STATE_NAME":"Washington","Diabetes_Actual":8.0,"Diabetes_Predicted":8.0624464305,"Warning":1},{"FIPS":"54","STATE_NAME":"West Virginia","Diabetes_Actual":13.0,"Diabetes_Predicted":11.9938904602,"Warning":0},{"FIPS":"55","STATE_NAME":"Wisconsin","Diabetes_Actual":8.0,"Diabetes_Predicted":7.6396532308,"Warning":0},{"FIPS":"56","STATE_NAME":"Wyoming","Diabetes_Actual":8.0,"Diabetes_Predicted":8.9091831234,"Warning":2}]
+[
+    {
+        "FIPS": "01",
+        "STATE_NAME": "Alabama",
+        "Diabetes_Actual": 13.0,
+        "Diabetes_Predicted": 12.6226617259,
+        "Warning": 0
+    },
+    {
+        "FIPS": "02",
+        "STATE_NAME": "Alaska",
+        "Diabetes_Actual": 8.0,
+        "Diabetes_Predicted": 8.2903079098,
+        "Warning": 1
+    },
+    {
+        "FIPS": "04",
+        "STATE_NAME": "Arizona",
+        "Diabetes_Actual": 10.0,
+        "Diabetes_Predicted": 9.0356125659,
+        "Warning": 0
+    },
+    {
+        "FIPS": "05",
+        "STATE_NAME": "Arkansas",
+        "Diabetes_Actual": 11.0,
+        "Diabetes_Predicted": 12.0257588309,
+        "Warning": 2
+    },
+    {
+        "FIPS": "06",
+        "STATE_NAME": "California",
+        "Diabetes_Actual": 11.0,
+        "Diabetes_Predicted": 8.544323833,
+        "Warning": 0
+    },
+    {
+        "FIPS": "08",
+        "STATE_NAME": "Colorado",
+        "Diabetes_Actual": 7.0,
+        "Diabetes_Predicted": 6.8799250372,
+        "Warning": 0
+    },
+    {
+        "FIPS": "09",
+        "STATE_NAME": "Connecticut",
+        "Diabetes_Actual": 9.0,
+        "Diabetes_Predicted": 9.0529356118,
+        "Warning": 1
+    },
+    {
+        "FIPS": "10",
+        "STATE_NAME": "Delaware",
+        "Diabetes_Actual": 10.0,
+        "Diabetes_Predicted": 10.4072905234,
+        "Warning": 1
+    },
+    {
+        "FIPS": "11",
+        "STATE_NAME": "District of Columbia",
+        "Diabetes_Actual": 8.0,
+        "Diabetes_Predicted": 6.2255435513,
+        "Warning": 0
+    },
+    {
+        "FIPS": "12",
+        "STATE_NAME": "Florida",
+        "Diabetes_Actual": 10.0,
+        "Diabetes_Predicted": 9.450820311,
+        "Warning": 0
+    },
+    {
+        "FIPS": "13",
+        "STATE_NAME": "Georgia",
+        "Diabetes_Actual": 11.0,
+        "Diabetes_Predicted": 9.5896128431,
+        "Warning": 0
+    },
+    {
+        "FIPS": "15",
+        "STATE_NAME": "Hawaii",
+        "Diabetes_Actual": 8.0,
+        "Diabetes_Predicted": 7.3624451399,
+        "Warning": 0
+    },
+    {
+        "FIPS": "16",
+        "STATE_NAME": "Idaho",
+        "Diabetes_Actual": 9.0,
+        "Diabetes_Predicted": 8.7774617079,
+        "Warning": 0
+    },
+    {
+        "FIPS": "17",
+        "STATE_NAME": "Illinois",
+        "Diabetes_Actual": 10.0,
+        "Diabetes_Predicted": 10.1841494109,
+        "Warning": 1
+    },
+    {
+        "FIPS": "18",
+        "STATE_NAME": "Indiana",
+        "Diabetes_Actual": 11.0,
+        "Diabetes_Predicted": 10.3027711141,
+        "Warning": 0
+    },
+    {
+        "FIPS": "19",
+        "STATE_NAME": "Iowa",
+        "Diabetes_Actual": 9.0,
+        "Diabetes_Predicted": 9.2777257784,
+        "Warning": 1
+    },
+    {
+        "FIPS": "20",
+        "STATE_NAME": "Kansas",
+        "Diabetes_Actual": 10.0,
+        "Diabetes_Predicted": 9.5983380311,
+        "Warning": 0
+    },
+    {
+        "FIPS": "21",
+        "STATE_NAME": "Kentucky",
+        "Diabetes_Actual": 12.0,
+        "Diabetes_Predicted": 12.2582105635,
+        "Warning": 1
+    },
+    {
+        "FIPS": "22",
+        "STATE_NAME": "Louisiana",
+        "Diabetes_Actual": 12.0,
+        "Diabetes_Predicted": 10.9971607266,
+        "Warning": 0
+    },
+    {
+        "FIPS": "23",
+        "STATE_NAME": "Maine",
+        "Diabetes_Actual": 8.0,
+        "Diabetes_Predicted": 9.524812986,
+        "Warning": 2
+    },
+    {
+        "FIPS": "24",
+        "STATE_NAME": "Maryland",
+        "Diabetes_Actual": 10.0,
+        "Diabetes_Predicted": 9.5105595015,
+        "Warning": 0
+    },
+    {
+        "FIPS": "25",
+        "STATE_NAME": "Massachusetts",
+        "Diabetes_Actual": 8.0,
+        "Diabetes_Predicted": 8.345828784,
+        "Warning": 1
+    },
+    {
+        "FIPS": "26",
+        "STATE_NAME": "Michigan",
+        "Diabetes_Actual": 9.0,
+        "Diabetes_Predicted": 9.1999301852,
+        "Warning": 1
+    },
+    {
+        "FIPS": "27",
+        "STATE_NAME": "Minnesota",
+        "Diabetes_Actual": 8.0,
+        "Diabetes_Predicted": 8.0993704505,
+        "Warning": 1
+    },
+    {
+        "FIPS": "28",
+        "STATE_NAME": "Mississippi",
+        "Diabetes_Actual": 14.0,
+        "Diabetes_Predicted": 11.6823575212,
+        "Warning": 0
+    },
+    {
+        "FIPS": "29",
+        "STATE_NAME": "Missouri",
+        "Diabetes_Actual": 10.0,
+        "Diabetes_Predicted": 10.0562555126,
+        "Warning": 1
+    },
+    {
+        "FIPS": "30",
+        "STATE_NAME": "Montana",
+        "Diabetes_Actual": 8.0,
+        "Diabetes_Predicted": 7.8805850191,
+        "Warning": 0
+    },
+    {
+        "FIPS": "31",
+        "STATE_NAME": "Nebraska",
+        "Diabetes_Actual": 9.0,
+        "Diabetes_Predicted": 9.3836908003,
+        "Warning": 1
+    },
+    {
+        "FIPS": "32",
+        "STATE_NAME": "Nevada",
+        "Diabetes_Actual": 10.0,
+        "Diabetes_Predicted": 9.8963975505,
+        "Warning": 0
+    },
+    {
+        "FIPS": "33",
+        "STATE_NAME": "New Hampshire",
+        "Diabetes_Actual": 7.0,
+        "Diabetes_Predicted": 8.2922816864,
+        "Warning": 2
+    },
+    {
+        "FIPS": "34",
+        "STATE_NAME": "New Jersey",
+        "Diabetes_Actual": 9.0,
+        "Diabetes_Predicted": 9.0607867933,
+        "Warning": 1
+    },
+    {
+        "FIPS": "35",
+        "STATE_NAME": "New Mexico",
+        "Diabetes_Actual": 12.0,
+        "Diabetes_Predicted": 9.6926677966,
+        "Warning": 0
+    },
+    {
+        "FIPS": "36",
+        "STATE_NAME": "New York",
+        "Diabetes_Actual": 10.0,
+        "Diabetes_Predicted": 9.3728772995,
+        "Warning": 0
+    },
+    {
+        "FIPS": "37",
+        "STATE_NAME": "North Carolina",
+        "Diabetes_Actual": 11.0,
+        "Diabetes_Predicted": 9.4224424235,
+        "Warning": 0
+    },
+    {
+        "FIPS": "38",
+        "STATE_NAME": "North Dakota",
+        "Diabetes_Actual": 9.0,
+        "Diabetes_Predicted": 9.3178378812,
+        "Warning": 1
+    },
+    {
+        "FIPS": "39",
+        "STATE_NAME": "Ohio",
+        "Diabetes_Actual": 11.0,
+        "Diabetes_Predicted": 10.1063071097,
+        "Warning": 0
+    },
+    {
+        "FIPS": "40",
+        "STATE_NAME": "Oklahoma",
+        "Diabetes_Actual": 12.0,
+        "Diabetes_Predicted": 11.6896649615,
+        "Warning": 0
+    },
+    {
+        "FIPS": "41",
+        "STATE_NAME": "Oregon",
+        "Diabetes_Actual": 8.0,
+        "Diabetes_Predicted": 8.5319991684,
+        "Warning": 1
+    },
+    {
+        "FIPS": "42",
+        "STATE_NAME": "Pennsylvania",
+        "Diabetes_Actual": 9.0,
+        "Diabetes_Predicted": 9.2555083275,
+        "Warning": 1
+    },
+    {
+        "FIPS": "44",
+        "STATE_NAME": "Rhode Island",
+        "Diabetes_Actual": 9.0,
+        "Diabetes_Predicted": 9.0774204309,
+        "Warning": 1
+    },
+    {
+        "FIPS": "45",
+        "STATE_NAME": "South Carolina",
+        "Diabetes_Actual": 12.0,
+        "Diabetes_Predicted": 10.1250185001,
+        "Warning": 0
+    },
+    {
+        "FIPS": "46",
+        "STATE_NAME": "South Dakota",
+        "Diabetes_Actual": 10.0,
+        "Diabetes_Predicted": 8.9613368593,
+        "Warning": 0
+    },
+    {
+        "FIPS": "47",
+        "STATE_NAME": "Tennessee",
+        "Diabetes_Actual": 12.0,
+        "Diabetes_Predicted": 10.8373600327,
+        "Warning": 0
+    },
+    {
+        "FIPS": "48",
+        "STATE_NAME": "Texas",
+        "Diabetes_Actual": 11.0,
+        "Diabetes_Predicted": 10.1812393425,
+        "Warning": 0
+    },
+    {
+        "FIPS": "49",
+        "STATE_NAME": "Utah",
+        "Diabetes_Actual": 8.0,
+        "Diabetes_Predicted": 9.35976201,
+        "Warning": 2
+    },
+    {
+        "FIPS": "50",
+        "STATE_NAME": "Vermont",
+        "Diabetes_Actual": 7.0,
+        "Diabetes_Predicted": 6.9452497923,
+        "Warning": 0
+    },
+    {
+        "FIPS": "51",
+        "STATE_NAME": "Virginia",
+        "Diabetes_Actual": 10.0,
+        "Diabetes_Predicted": 8.9088895317,
+        "Warning": 0
+    },
+    {
+        "FIPS": "53",
+        "STATE_NAME": "Washington",
+        "Diabetes_Actual": 8.0,
+        "Diabetes_Predicted": 8.0624464305,
+        "Warning": 1
+    },
+    {
+        "FIPS": "54",
+        "STATE_NAME": "West Virginia",
+        "Diabetes_Actual": 13.0,
+        "Diabetes_Predicted": 11.9938904602,
+        "Warning": 0
+    },
+    {
+        "FIPS": "55",
+        "STATE_NAME": "Wisconsin",
+        "Diabetes_Actual": 8.0,
+        "Diabetes_Predicted": 7.6396532308,
+        "Warning": 0
+    },
+    {
+        "FIPS": "56",
+        "STATE_NAME": "Wyoming",
+        "Diabetes_Actual": 8.0,
+        "Diabetes_Predicted": 8.9091831234,
+        "Warning": 2
+    }
+]

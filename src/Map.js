@@ -8,7 +8,9 @@ import { Tooltip as ReactTooltip } from "react-tooltip"; // Updated import for T
 import { BarChart, Bar, XAxis,LabelList, YAxis, CartesianGrid, Tooltip as RechartsTooltip, Legend } from 'recharts';
 import county_data from './data_processing/outputs/county_json.json'; // Import the county-level data
 import stateData from './data_processing/outputs/state_json.json'; // Import the state-level data
-import meanData from './data_processing/outputs/mean.json'; // Import national averages
+import meanData from './data_processing/outputs/mean.json';
+import { Warning as WarningIcon, Error as AlertIcon } from '@mui/icons-material'; 
+import stateWarnings from './data_processing/outputs/state_warning.json';
 
 const stateGeoUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json"; // State borders
 const countyGeoUrl = "https://cdn.jsdelivr.net/npm/us-atlas@3/counties-10m.json"; // County borders
@@ -25,13 +27,21 @@ const Map = () => {
   const [colourScale, setColourScale] = useState({});
   const [patternScale, setPatternScale] = useState({});
   const [hoveredStateFIPS, setHoveredStateFIPS] = useState(null);
-  const [selectedState, setSelectedState] = useState(null); // Store selected state for tooltip
+  const [selectedState, setSelectedState] = useState(null); 
   const [showPatterns, setShowPatterns] = useState(false);
   const [selectedRiskFactor, setSelectedRiskFactor] = useState("Obesity");
   const legendGlyphSize = 15;
   const [minRiskFactor, setMinRiskFactor] = useState(0);
   const [maxRiskFactor, setMaxRiskFactor] = useState(100);
   const [hoveredStateData, setHoveredStateData] = useState(null); 
+  const [showAlertColors, setShowAlertColors] = useState(false); 
+
+  const [stateWarningData, setStateWarningData] = useState([]);
+
+  useEffect(() => {
+    setStateWarningData(stateWarnings);
+  }, []);
+
   let colorScale = scaleQuantile()
     .domain([0, 0.15])
     .range([
@@ -108,10 +118,36 @@ const Map = () => {
   
   const handleMouseLeave = () => {
     setHoveredStateFIPS(null);  
-    // setHoveredStateData(null);  
+
   };
   
+  const getTooltipContent = (stateFips) => {
 
+    const stateData = stateWarningData.find(state => state.FIPS === stateFips);
+
+    if (!stateData) return "Data not available";
+
+    const { STATE_NAME, Diabetes_Actual, Diabetes_Predicted, Warning } = stateData;
+    let warningMessage = "";
+    if (Warning === 2) {
+      warningMessage = `<div style="display: flex; align-items: center;">
+                          <span style="color: red;">🚨</span> 
+                          <span style="margin-left: 5px;">Alert</span>
+                        </div>`;
+    } else if (Warning === 1) {
+      warningMessage = `<div style="display: flex; align-items: center;">
+                          <span style="color: orange;">⚠️</span> 
+                          <span style="margin-left: 5px;">Warning</span>
+                        </div>`;
+    }
+
+    return `
+      ${warningMessage}
+      <div><strong>${STATE_NAME}</strong></div>
+      <div>Diabetes Actual: ${Diabetes_Actual}%</div>
+      <div>Diabetes Predicted: ${Diabetes_Predicted.toFixed(2)}%</div>
+    `;
+  };
   return (
     <div>
       <div style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
@@ -219,7 +255,14 @@ const Map = () => {
         />
         <span>Show the Selected Risk Factor</span>
         </div>
-
+        <div style={{ padding: "2%" }}>
+        <Switch
+          checked={showAlertColors}
+          onChange={() => setShowAlertColors(!showAlertColors)}
+          inputProps={{ 'aria-label': 'controlled' }}
+        />
+        <span>Show Alerts</span>
+      </div>
       </div>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
 
@@ -256,28 +299,35 @@ const Map = () => {
                 const stateFips = geo.id.length === 5 ? geo.id.substring(0, 2) : geo.id.substring(0, 1);
                 const isHoveredState = stateFips === hoveredStateFIPS;
                 const stateInfo = stateData.find(d => d.FIPS === stateFips);
+
+                // Find state warning
+                const stateWarning = stateWarningData.find(state => state.FIPS === stateFips);
+                const warningLevel = stateWarning ? stateWarning.Warning : 0;
+
                 return (
                   <Geography
                     key={geo.rsmKey}
                     geography={geo}
                     fill={
                       isHoveredState
-                        ? "#0000FF" 
+                        ? "#0000FF"
+                        : showAlertColors && warningLevel === 2
+                        ? "#F05454" //when alert 2
+                        : showAlertColors && warningLevel === 1
+                        ? "#E3651D" // when alert1
                         : colourScale[countyFips] || "#EEE"
                     }
                     onMouseEnter={() => handleHover(stateFips, stateInfo)}
-                    onMouseLeave={() => handleMouseLeave}
+                    onMouseLeave={() => handleMouseLeave()}
                     data-tooltip-id="map-tooltip"
-                    data-tooltip-content={`FIPS: ${stateFips}`}
+                    data-tooltip-html={getTooltipContent(stateFips)} 
                     style={{
                       default: {
-                        stroke: "#AAA", 
+                        stroke: "#AAA",
                         outline: "none",
-                      
                       },
                       hover: {
                         outline: "none",
-                      
                       },
                     }}
                   />
@@ -285,6 +335,7 @@ const Map = () => {
               })
             }
           </Geographies>
+
 
           <Geographies geography={stateGeoUrl}>
             {({ geographies }) =>
@@ -336,14 +387,14 @@ const Map = () => {
       <RechartsTooltip />
       <Legend 
         layout="horizontal" 
-        verticalAlign="top"  // Position the legend at the top
-        align="center"  // Center the legend horizontally
+        verticalAlign="top" 
+        align="center"  
       />
       <Bar dataKey="State" fill="#82ca9d">
-        <LabelList dataKey="State" position="top" formatter={(value) => `${value}%`} />  {/* Add percentage labels */}
+        <LabelList dataKey="State" position="top" formatter={(value) => `${value}%`} />  
       </Bar>
       <Bar dataKey="Mean" fill="#8884d8">
-        <LabelList dataKey="Mean" position="top" formatter={(value) => `${value}%`} />  {/* Add percentage labels */}
+        <LabelList dataKey="Mean" position="top" formatter={(value) => `${value}%`} />  
       </Bar>
     </BarChart>
   </div>
