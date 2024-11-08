@@ -3,3 +3,8 @@ node_modules/
 **/*.csv
 **/venv/
 venv/
+ml_model/data/*
+.ipynb_checkpoints
+.DS_Store
+.idea/
+.pyc
