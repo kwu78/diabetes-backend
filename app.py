@@ -17,9 +17,9 @@ def predict_diabetes_by_id(_id):
     print(diabetes_likelihood)
     return jsonify({"diabetes_likelihood": diabetes_likelihood})
 
-@app.route('/get_patient_info_by_id',methods=['GET'])
-def get_patient_info_by_id():
-    return {}
+@app.route('/get_patient_info_by_id/<id>', methods=['GET'])
+def get_patient_info_by_id(id):
+    return jsonify({"id": id, "name": "Patient 1", "diabetes_likelihood": "50%"})
 
 def get_features_by_id(_id):
     # gender age hypertension heart_disease bmi	HbA1c_level	blood_glucose_level smoking_1(no) smoking_2(yes)
@@ -46,5 +46,5 @@ def get_features_by_id(_id):
     return ((gender, age, hypertension, 0, bmi, HbA1c_level, blood_glucose_level, 0, 1),) # mock feature array
     
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
+    port = int(os.environ.get("PORT", 5001))
     app.run(host="0.0.0.0", port=port)
