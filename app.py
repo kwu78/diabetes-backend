@@ -6,7 +6,7 @@ import os
 app = Flask(__name__)
 CORS(app)
 
-@app.route('/predict_diabetes_by_id', methods=['GET'])
+@app.route('/predict_diabetes_by_id/<_id>', methods=['GET'])
 
 ##TODO: 
 def predict_diabetes_by_id(_id):
@@ -17,9 +17,9 @@ def predict_diabetes_by_id(_id):
     print(diabetes_likelihood)
     return jsonify({"diabetes_likelihood": diabetes_likelihood})
 
-@app.route('/get_patient_info_by_id/<id>', methods=['GET'])
-def get_patient_info_by_id(id):
-    return jsonify({"id": id, "name": "Patient 1", "diabetes_likelihood": "50%"})
+@app.route('/get_patient_info_by_id/<_id>', methods=['GET'])
+def get_patient_info_by_id(_id):
+    return jsonify({"_id": _id, "name": "Patient 1", "diabetes_likelihood": "50%"})
 
 def get_features_by_id(_id):
     # gender age hypertension heart_disease bmi	HbA1c_level	blood_glucose_level smoking_1(no) smoking_2(yes)
