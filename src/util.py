@@ -1,7 +1,7 @@
 from .patients import Patients
 from .observations import Observations
 import datetime
-import joblib
+import pickle
 import math
 import os
 
@@ -25,8 +25,10 @@ def calculate_age(dob):
     return int(math.floor(diff/365.25))
 
 def load_ml_model():
-    path = os.path.join(os.path.dirname(__file__), '../ml_model/artifact/logistic_v1.sav')
-    return joblib.load(path)
+    path = os.path.join(os.path.dirname(__file__), '../ml_model/artifact/logistic_v1.pkl')
+    with open(path, 'rb') as file:
+        model = pickle.load(file)
+    return model
 
 def ml_predict(features):
     model = load_ml_model()
