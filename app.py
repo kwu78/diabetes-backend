@@ -8,9 +8,8 @@ CORS(app)
 
 @app.route('/get_patient_info_by_id/<_id>', methods=['GET'])
 def get_patient_info_by_id(_id):
-    features = get_features_by_id(_id)[0]
+    features = get_features_by_id(_id)
     diabetes_likelihood = util.ml_predict(features)
-
     def smoking_reverse_map(x,y):
         if x == 1:
             return "No"
@@ -21,13 +20,14 @@ def get_patient_info_by_id(_id):
 
     return jsonify({"_id": _id,
                     "name": "Patient 1",
-                    "gender": {0 : "Female", 1 : "Male"}.get(features[0]),
-                    "age": features[1],
-                    "hypertension": {0 : "No", 1 : "Yes"}.get(features[2]),
-                    "bmi": features[3],
-                    "HbA1c_level": features[4],
-                    "blood_glucose_level" : features[5],
-                    "smoking" : smoking_reverse_map(features[6], features[7]),
+                    "gender": {0 : "Female", 1 : "Male"}.get(features[0][0]),
+                    "age": features[0][1],
+                    "hypertension": {0 : "No", 1 : "Yes"}.get(features[0][2]),
+                    "bmi": features[0][3],
+                    "HbA1c_level": features[0][4],
+                    "blood_glucose_level" : features[0][5],
+                    "smoking" : smoking_reverse_map(features[0][6], features[0][7]),
+                    "diabetes_likelihood" : diabetes_likelihood,
                     }
                    )
 
