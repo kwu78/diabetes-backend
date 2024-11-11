@@ -4,6 +4,22 @@ import datetime
 import pickle
 import math
 import os
+import json
+
+def set_up_login():
+    path = os.path.join(os.path.dirname(__file__), '../app_data/user_password.json')
+    with open(path, 'r') as f:
+        user_password = json.load(f)
+    return user_password
+
+def authenticate(username, password):
+    dic = set_up_login()
+    stored_password = dic.get(username, None)
+    if not stored_password:
+        return False, "Authentication failed: wrong username"
+    if stored_password != password:
+        return False, "Authentication failed: wrong password"
+    return True, "Successful"
 
 def set_up_patients():
     path = os.path.join(os.path.dirname(__file__), '../app_data/Patients.ndjson')

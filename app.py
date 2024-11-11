@@ -1,10 +1,23 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 from flask_cors import CORS
 import src.util as util
-import random
 import os
 app = Flask(__name__)
 CORS(app)
+
+@app.route('/login_authenticate/', methods=['GET'])
+def login():
+    _id  = request.args.get('username', type=str, default='')
+    _password  = request.args.get('password', type=str, default='')
+    if not _id:
+        status = False
+        message = 'Authentication failed: missing username'
+    elif not _password:
+        status = False
+        message = 'Authentication failed: missing password'
+    else:
+        status, message = util.authenticate(_id, _password)
+    return jsonify({'_id': _id, '_password': _password, 'message': message, 'status': status})
 
 @app.route('/get_patient_info_by_id/<_id>', methods=['GET'])
 def get_patient_info_by_id(_id):
