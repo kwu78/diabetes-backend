@@ -5,6 +5,12 @@ import os
 app = Flask(__name__)
 CORS(app)
 
+@app.route("/", methods=["GET", "HEAD"])
+def index():
+    if request.method == "HEAD":
+        return "", 200
+    return "This is the Backend of Diabetes Dashboard", 200
+
 @app.route('/login_authenticate/', methods=['GET'])
 def login():
     _id  = request.args.get('username', type=str, default='')
