@@ -55,14 +55,14 @@ def get_features_by_id(_id):
     
     # patient-level features
     patients = util.set_up_patients()
-    patient = patients[patients['id'] == _id]
+    patient = patients[patients['id'] == _id].reset_index()
     if not patient.empty:
         gender = util.gender_mapper(patient.loc[:1,'gender'].item())
         age = util.calculate_age(patient.loc[:1,'birthDate'].item())
 
     # observation-level features
     observations = util.set_up_observations()
-    patient_observations = observations[observations['patient_id'] == _id]
+    patient_observations = observations[observations['patient_id'] == _id].reset_index()
     if not patient_observations.empty:
         bmi = patient_observations[patient_observations['code_display'] == 'Body mass index (BMI)']['value'].tolist()[0]
         HbA1c_level = patient_observations[patient_observations['code_display'] == 'Hemoglobin A1c/Hemoglobin']['value'].tolist()[0]
