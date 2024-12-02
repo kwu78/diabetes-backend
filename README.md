@@ -12,6 +12,10 @@ We use this personal Github Repo because the free online server (Render) we use 
 - The app is hosted at https://github.gatech.edu/pages/kwu339/diabetes-dashboard/.
 - The app demo is at https://www.youtube.com/watch?v=35TVdFmKpyQ
 
+One can use the following credentials to log in as a mock user
+- username: ID_a
+- password: ID_a_password
+  
 ### Frontend
 The frontend repository sits at https://github.gatech.edu/kwu339/diabetes-dashboard.
 
