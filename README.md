@@ -13,8 +13,15 @@ We use this personal Github Repo because the free online server (Render) we use 
 - The app demo is at https://www.youtube.com/watch?v=35TVdFmKpyQ
 
 One can use the following credentials to log in as a mock user
-- username: ID_a
-- password: ID_a_password
+- Healthy person:
+  - username: ID_a
+  - password: ID_a_password
+- Diabetes patient
+  - username: ID_b
+  - password: ID_b_password
+- Diabetes-prone person
+  - username: ID_c
+  - password: ID_c_password
   
 ### Frontend
 The frontend repository sits at https://github.gatech.edu/kwu339/diabetes-dashboard.
